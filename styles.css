@@ -1,4 +1,13 @@
-#tester {
-    font-weight: bold;
-    font-style: italic;
+.fixed-header {
+    /*work out how to keep the headline below the header with the header still fixed*/
+    position: fixed, absolute;
+    border: 1px black solid;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    transition: 0.3s;
+    background-color: blue;
+    margin-top: 0px;
 }
+
+.headline {}
