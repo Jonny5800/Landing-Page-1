@@ -1,5 +1,12 @@
 .fixed-header {
-    /*work out how to keep the headline below the header with the header still fixed*/
+    margin-top: 0px;
+    position: fixed;
+    display: inline-block;
+    width: 100vw;
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    /*work out how to keep the headline below the header with the header still fixed
     position: fixed, absolute;
     border: 1px black solid;
     width: 100%;
@@ -7,7 +14,7 @@
     padding: 20px;
     transition: 0.3s;
     background-color: blue;
-    margin-top: 0px;
+    margin-top: 0px;*/
 }
 
 .headline {
@@ -71,16 +78,34 @@
 
 .bullet-group {}
 
+
+/*
+Code or dynamic flexing boxes
+https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
+*/
+
 .flex-surround {
     display: flex;
     flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+    margin: 0px;
 }
 
 .flex-boxes {
-    flex: 33.333%;
-    transform: translate(50%);
-    /* this makes the boxes misalligned
-    border: 1px solid black;*/
+    text-align: center;
+    flex: 0.3%;
+    /*instead of 0.33% makes the boxes much narrower*/
+    /*transform: translate(50%);
+    /*
+    this makes the boxes misalligned
+    border: 1px solid black;
+    */
+    /*flex-wrap: nowrap;*/
+    /*
+    max-width: 0.3fr 0.3fr 0.3fr;
+    */
+    border: 1px solid black;
 }
 
 @media screen and (max-width:992px) {
@@ -93,6 +118,37 @@
     .flex-boxes {
         flex-direction: column;
     }
+}
+
+#box1 {
+    background-color: red;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+#box2 {
+    background-color: yellow;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+#box3 {
+    background-color: green;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.threepics {
+    max-width: 60%;
+    height: auto;
+}
+
+.box-text {
+    width: 85%;
+    text-align: justify;
 }
 
 
