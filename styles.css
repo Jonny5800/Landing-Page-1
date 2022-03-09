@@ -1,9 +1,17 @@
+.body {
+    min-height: 100vh;
+}
+
+#my-header {}
+
 .fixed-header {
-    margin-top: 0px;
-    position: fixed;
+    /*margin-top: 0px; this does nothing to stop there being a white gap above the sticky banner*/
+    position: sticky;
+    top: 0;
+    /* ^^ the code for a sticky top of bottom banner*/
     display: inline-block;
     width: 100vw;
-    padding: 10px 16px;
+    padding: 20px 16px;
     background: #555;
     color: #f1f1f1;
     /*work out how to keep the headline below the header with the header still fixed
@@ -64,10 +72,20 @@
     color: white;
 }
 
+.video-tag {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#video-tag-color {
+    color: red;
+}
+
 .video {
     display: flex;
     justify-content: center;
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
     max-width: 100%;
     /*
     below PADDING is pretty much copied from video
@@ -113,8 +131,10 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
+    /*
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 10%;*/
+    margin: 5% 10% 0% 10%;
     justify-content: center;
 }
 
@@ -133,6 +153,8 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
     */
     border: 1px solid black;
     padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 @media screen and (max-width:992px) {
@@ -147,30 +169,36 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
     }
 }
 
+.box-headers {
+    font-weight: bolder;
+    color: blue;
+}
+
 #box1 {
     background-color: red;
     max-width: 100%;
     height: auto;
-    margin: 0px;
 }
 
 #box2 {
-    background-color: yellow;
+    background-color: rgb(0, 102, 255);
     max-width: 100%;
     height: auto;
-    margin: 0px;
 }
 
 #box3 {
-    background-color: green;
+    background-color: rgb(193, 236, 38);
     max-width: 100%;
     height: auto;
-    margin: 0px;
 }
 
 .threepics {
-    max-width: 60%;
+    max-width: 70%;
     height: auto;
+}
+
+#pic1:hover {
+    content: url();
 }
 
 .box-text {
