@@ -2,8 +2,6 @@
     min-height: 100vh;
 }
 
-#my-header {}
-
 .fixed-header {
     /*margin-top: 0px; this does nothing to stop there being a white gap above the sticky banner*/
     position: sticky;
@@ -14,6 +12,7 @@
     padding: 20px 16px;
     background: #555;
     color: #f1f1f1;
+    z-index: 1;
     /*work out how to keep the headline below the header with the header still fixed
     position: fixed, absolute;
     border: 1px black solid;
@@ -23,6 +22,43 @@
     transition: 0.3s;
     background-color: blue;
     margin-top: 0px;*/
+}
+
+.fixed-footer {
+    position: bottom;
+    bottom: 0;
+    display: inline-block;
+    width: 100vw;
+    background: #555;
+    color: #f1f1f1;
+    margin-top: 5%;
+}
+
+#header-tag {
+    justify-content: right;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.wordy {
+    text-align: end;
+}
+
+.words1 {
+    /*justify-content: right;*/
+    text-align: center;
+}
+
+.words2 {
+    /*justify-content: right;*/
+    text-align: center;
+}
+
+.words3 {
+    /*justify-content: right;*/
+    text-align: center;
 }
 
 .headline {
@@ -39,6 +75,7 @@
     color: black;
     border: 1px solid red;
     transition-duration: 0.6s;
+    margin-top: 5px;
     /*display: flex;*/
     /*
     align-items: center;
@@ -198,12 +235,109 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
 }
 
 #pic1:hover {
-    content: url();
+    content: url("https://statics.wheelwell.com/u/e8b2f2c1-db28-4be1-8c3c-e91477445788.medium.jpg?width=900");
+}
+
+#pic2:hover {
+    content: url("https://www.pro-car-performance.co.uk/wp-content/uploads/exhaust-bmw-e46-m3.jpg");
+    /* clip doesnt work to crop the zoomed image*/
+    clip: rect(500px, 500px, 50px, 50px)
+}
+
+#pic3:hover {
+    content: url("https://www.e46fanatics.com/attachments/imag0369-jpg.505120/");
 }
 
 .box-text {
     width: 100%;
     text-align: justify;
+}
+
+
+/*
+IMAGE ON HOVER JAVASCTIPT
+https://stackoverflow.com/questions/18032220/how-to-change-source-of-img-tag-on-hover
+*/
+
+
+/*
+https://w3bits.com/css-image-hover-zoom/
+Second image zoom code
+*/
+
+
+/* [1] The container */
+
+#pic1:hover {
+    height: 70%;
+    width: 70%;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+
+/* [2] Transition property for smooth transformation of images */
+
+#pic1:hover {
+    transition: transform 1.5s ease;
+}
+
+
+/* [3] Finally, transforming the image when container gets hovered */
+
+#pic1:hover:hover {
+    transform: scale(1.5);
+}
+
+
+/* [1] The container */
+
+#pic2:hover {
+    height: 70%;
+    width: 70%;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+
+/* [2] Transition property for smooth transformation of images */
+
+#pic2:hover {
+    transition: transform 1.5s ease;
+}
+
+
+/* [3] Finally, transforming the image when container gets hovered */
+
+#pic2:hover {
+    transform: scale(1.5);
+}
+
+
+/* [1] The container */
+
+#pic3:hover {
+    height: 70%;
+    width: 70%;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+
+/* [2] Transition property for smooth transformation of images */
+
+#pic3:hover {
+    transition: transform 1.5s ease;
+}
+
+
+/* [3] Finally, transforming the image when container gets hovered */
+
+#pic3:hover {
+    transform: scale(2.0);
 }
 
 
