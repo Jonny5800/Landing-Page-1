@@ -1,5 +1,12 @@
+.border-box {
+    margin: 0%;
+}
+
 .body {
     min-height: 100vh;
+    background-image: url(https://media.istockphoto.com/photos/abstract-grunge-white-texture-background-picture-id952039442);
+    background-repeat: repeat;
+    background-attachment: scroll;
 }
 
 .fixed-header {
@@ -108,6 +115,7 @@
 
 #video-tag-color {
     color: red;
+    text-decoration: underline 2px solid;
 }
 
 .video {
