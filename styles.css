@@ -250,8 +250,20 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
 	height: auto;
 }
 
+.image-container {
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#pic1 {
+	height: 200px;
+	width: 350px;
+}
+
 #pic1:hover {
-	content: url("https://statics.wheelwell.com/u/e8b2f2c1-db28-4be1-8c3c-e91477445788.medium.jpg?width=900");
+	transition: transform 1.5s ease;
+	transform: scale(1.5);
 }
 
 #pic2:hover {
@@ -285,25 +297,7 @@ Code for the second image to zoom in-out
 
 /* [1] The container */
 
-#pic1:hover {
-	height: 70%;
-	width: 70%;
-	/* [1.1] Set it as per your need */
-	overflow: hidden;
-	/* [1.2] Hide the overflowing of child elements */
-}
-
 /* [2] Transition property for smooth transformation of images */
-
-#pic1:hover {
-	transition: transform 1.5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-
-#pic1:hover:hover {
-	transform: scale(1.5);
-}
 
 /* [1] The container */
 
