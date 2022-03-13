@@ -329,17 +329,7 @@ Code for the second image to zoom in-out
 	/* [1.1] Set it as per your need */
 	overflow: hidden;
 	/* [1.2] Hide the overflowing of child elements */
-}
-
-/* [2] Transition property for smooth transformation of images */
-
-#pic3:hover {
 	transition: transform 1.5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-
-#pic3:hover {
 	transform: scale(1.5);
 }
 
@@ -347,3 +337,5 @@ Code for the second image to zoom in-out
 Hoverable button & color change
 https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover
 */
+
+/* Move all the media queries down here */
