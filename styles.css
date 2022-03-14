@@ -1,3 +1,17 @@
+/* fix width issue at bottom*/
+
+
+/*fix image; sizes, secon image, zoom overflow*/
+
+
+/*check wordy madgin*/
+
+
+/*check wordy cover white*/
+
+
+/*got down to E-mail making a list*/
+
 body {
     padding: 0;
     margin: 0;
@@ -44,9 +58,6 @@ body {
 .wordy:hover {
     color: white;
 }
-
-
-/**DOESNT WORK*/
 
 .headline {
     text-align: center;
@@ -103,12 +114,6 @@ body {
     padding-right: 15%;
     font-size: larger;
 }
-
-
-/*
-Using flex boxes
-https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
-*/
 
 .image-container {
     width: 300px;
@@ -193,12 +198,6 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
     width: 100%;
     text-align: justify;
 }
-
-
-/*
-Hoverable button & color change
-https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover
-*/
 
 
 /* Move all the media queries down here */
