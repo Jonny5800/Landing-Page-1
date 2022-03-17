@@ -23,6 +23,7 @@ body {
 
 .fa-compass-drafting {
     color: red;
+    flex-wrap: wrap;
 }
 
 .fa-hands {
@@ -264,14 +265,21 @@ https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
 
 /* Move all the media queries down here */
 
-@media screen and (max-width: 600px) {
+@media
+/*screen and*/
+
+(max-width: 600px) {
     .three-flex-boxes {
         flex: 66.66%;
     }
 }
 
+*/
+/*
 @media screen and (max-width: 300px) {
     .three-flex-boxes {
         flex-direction: column;
     }
 }
+
+*/
