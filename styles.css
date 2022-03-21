@@ -1,355 +1,266 @@
-body {
-	padding: 0;
-	margin: 0;
-	min-height: 100vh;
-	background-image: url(https://media.istockphoto.com/photos/abstract-grunge-white-texture-background-picture-id952039442);
-	background-repeat: repeat;
-	background-attachment: scroll;
-}
-
-.border-box {
-	margin: 0%;
-}
-
-.fa-solid {
-	color: red;
-}
-
-.fixed-header {
-	/* WORK OUT How to stop there being a white gap above the sticky banner- [ margin-top: 0px; ] this doesn't work */
-	position: sticky;
-	top: 0;
-	/* ^^ the code for a sticky top of bottom banner*/
-	display: inline-block;
-	width: 100vw;
-	padding: 20px 16px;
-	background: #555;
-	color: #f1f1f1;
-	z-index: 1;
-	/*WORK OUT - how to keep the headline below the header with the header still fixed - [ solution z-index: 1; ]
-    position: fixed, absolute;
-    border: 1px black solid;
-    width: 100%;
-    height: 100px;
-    padding: 20px;
-    transition: 0.3s;
-    background-color: blue;
-    margin-top: 0px;*/
-}
-
-.fixed-footer {
-	position: bottom;
-	bottom: 0;
-	display: inline-block;
-	width: 100vw;
-	background: #555;
-	color: #f1f1f1;
-	margin-top: 5%;
-}
-
-#header-tag {
-	justify-content: right;
-}
-
-.copyright {
-	text-align: center;
-}
-
-.wordy {
-	text-align: end;
-	margin: 0.5%;
-}
-
-.wordy:hover {
-	color: white;
-}
-
-.headline {
-	text-align: center;
-	position: relative;
-	font-family: "Trebuchet MS";
-}
-
-#email {
-	text-align: center;
-}
-
-.start-button {
-	background-color: rgb(245, 160, 3);
-	color: black;
-	border: 1px solid red;
-	transition-duration: 0.6s;
-	margin-top: 5px;
-	/*display: flex;*/
-	/*
-    align-items: center;
-    */
-	/*
-    display: inline-block;
-    vertical-align: middle;
-    */
-	/*
-    margin-left: 50vw;
+    /* fix width issue at bottom*/
+    /*fix image; sizes, secon image, zoom overflow*/
+    /*check wordy madgin*/
+    /*check wordy cover white*/
+    /*got down to E-mail making a list*/
     
-    transform: translate(-50%);*/
-}
-
-#button-placing {
-	display: flex;
-	justify-content: center;
-	/*
-    display: flex;
-    flex-wrap: 50%;
-    */
-	/*margin-left: 50%;*/
-	/*
-    transform: translate(-50%);
-    */
-	/*^^^how to position/translate this to the centre*/
-}
-
-.start-button:hover {
-	background-color: rgb(238, 83, 12);
-	color: white;
-}
-
-.video-tag {
-	text-align: center;
-	font-size: larger;
-	font-weight: bold;
-}
-
-#video-tag-color {
-	color: red;
-	text-decoration: underline 2px solid;
-}
-
-.video {
-	display: flex;
-	justify-content: center;
-	padding: 5% 5% 0% 5%;
-	max-width: 100%;
-	/*
-    ALL OF THE COMMENTS BELOW WERE JUST TRYING TO WORK OUT HOW TO POSITON THE VIDEO
-    below PADDING is pretty much copied from video
-    https://www.youtube.com/watch?v=9YffrCViTVk
-    */
-	/*
-    margin-left: 50vw;
-    */
-	/*
-    transform: translate(-50%);
-    */
-	/*work out why the youtube video doesnt stay centre (SOLUTION IS WITH JUSTIFY CONTENT-CENTER)*/
-}
-
-/*
-.video {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-}*/
-
-/*
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}*/
-
-.bullet-group {
-	display: flex;
-	/* Work out out how to keep the text aligned above the centered video [ solution - display: flex; ]
-    margin-left: 20%;
-    margin-right: 20%;*/
-	/*
-    transform: translate(50%);*/
-	max-width: 70%;
-	justify-content: center;
-	padding-top: 4%;
-	padding-left: 15%;
-	padding-right: 15%;
-	font-size: larger;
-}
-
-/*
-Code or dynamic flexing boxes
-https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
-*/
-
-.three-pic-box-surround {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 100%;
-	/*
-    margin-left: 10%;
-    margin-right: 10%;*/
-	margin: 5% 10% 0% 10%;
-	justify-content: center;
-}
-
-.three-flex-boxes {
-	text-align: center;
-	flex: 0.3%;
-	/*instead of 0.33% makes the boxes much narrower*/
-	/*transform: translate(50%);
+    body {
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        background-image: url(https://media.istockphoto.com/photos/abstract-grunge-white-texture-background-picture-id952039442);
+        background-repeat: repeat;
+        background-attachment: scroll;
+    }
+    
+    .fa-compass-drafting {
+        color: red;
+        flex-wrap: wrap;
+    }
+    
+    .fa-hands {
+        color: rgb(0, 102, 255);
+    }
+    
+    .fa-phone {
+        color: rgb(193, 236, 38);
+    }
     /*
-    this makes the boxes misalligned
-    border: 1px solid black;
-    */
-	/*flex-wrap: nowrap;*/
-	/*
-    max-width: 0.3fr 0.3fr 0.3fr;
-    */
-	border: 1px solid black;
-	padding: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
+.xyz::before {
+    content: "\f201";
+    font-family: "Font Awesome 5 Brands";
 }
-
-@media screen and (max-width: 992px) {
-	.three-flex-boxes {
-		flex: 66.66%;
-	}
+/*https://hollypryce.com/font-awesome-bullet-points/*/
+    
+    .fixed-header {
+        position: fixed;
+        top: 0;
+        display: inline-block;
+        width: 100vw;
+        padding: 20px 16px;
+        background: #555;
+        color: #f1f1f1;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    
+    .fixed-footer {
+        box-sizing: border-box;
+        position: bottom;
+        bottom: 0;
+        display: inline-block;
+        width: 100vw;
+        background: #555;
+        color: #f1f1f1;
+        margin-top: 5%;
+        max-width: 100%;
+    }
+    
+    .copyright {
+        text-align: center;
+    }
+    
+    .wordy {
+        text-align: end;
+        margin: 0.5%;
+    }
+    
+    .wordy:hover {
+        color: white;
+    }
+    
+    .headline {
+        text-align: center;
+        position: relative;
+        font-family: "Trebuchet MS";
+        z-index: 1;
+    }
+    
+    #email {
+        text-align: center;
+    }
+    
+    .start-button {
+        background-color: rgb(245, 160, 3);
+        color: black;
+        border: 1px solid red;
+        transition-duration: 0.6s;
+        margin-top: 5px;
+    }
+    
+    #button-placing {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .start-button:hover {
+        background-color: rgb(238, 83, 12);
+        color: white;
+    }
+    
+    .video-tag {
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+    }
+    
+    #video-tag-color {
+        color: red;
+        text-decoration: underline 2px solid;
+    }
+    
+    .video {
+        display: flex;
+        justify-content: center;
+        padding: 5% 5% 0% 5%;
+        max-width: 100%;
+    }
+    
+    .bullet-group {
+        display: flex;
+        max-width: 70%;
+        justify-content: center;
+        padding-top: 4%;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: larger;
+    }
+    /*
+ Using flex boxes https: //www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
+ * ************************************************************* Uncomment to try work out what is causing the uneven boxes 
+ */
+    
+    .three-pic-box-surround {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 5% 10% 0% 10%;
+        justify-content: center;
+    }
+    
+    .three-flex-boxes {
+        text-align: center;
+        flex: 0.33%;
+        border: 1px solid black;
+        padding: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #box1 {
+        background-color: red;
+        max-width: 100%;
+        height: auto;
+        /*overflow: hidden;*/
+        /*CONTINUING THE COMMENT OUT SECTION...*/
+    }
+    
+    #box2 {
+        background-color: rgb(0, 102, 255);
+        max-width: 100%;
+        height: auto;
+    }
+    /*overflow: hidden;
+    
+ ^^^THIS NEEDS TO BE WORKED OUT
+    
+  CONTINUING THE COMENT OUT SECTION....(1 of 2)
 }
-
-@media screen and (max-width: 300px) {
-	.three-flex-boxes {
-		flex-direction: column;
-	}
-}
-
-.box-headers {
-	font-weight: bolder;
-	color: blue;
-}
-
-#box1 {
-	background-color: red;
-	max-width: 100%;
-	height: auto;
-}
-
-#box2 {
-	background-color: rgb(0, 102, 255);
-	max-width: 100%;
-	height: auto;
-}
-
-#box3 {
-	background-color: rgb(193, 236, 38);
-	max-width: 100%;
-	height: auto;
-}
-
-.threepics {
-	max-width: 70%;
-	height: auto;
-}
-
-#pic1:hover {
-	content: url("https://statics.wheelwell.com/u/e8b2f2c1-db28-4be1-8c3c-e91477445788.medium.jpg?width=900");
-}
-
-#pic2:hover {
-	content: url("https://www.pro-car-performance.co.uk/wp-content/uploads/exhaust-bmw-e46-m3.jpg");
-	/* "CLIP" doesnt work to crop the zoomed image*/
-	/*object-fit: scale-down;
-    object-position: 0% 100;
-    height: 100px;
-    width: 300px;
-    Above doesnt work to crop the image either*/
-}
-
-#pic3:hover {
-	content: url("https://www.e46fanatics.com/attachments/imag0369-jpg.505120/");
-}
-
-.box-text {
-	width: 100%;
-	text-align: justify;
-}
-
-/*
-IMAGE ON HOVER JAVASCTIPT
-https://stackoverflow.com/questions/18032220/how-to-change-source-of-img-tag-on-hover
 */
+    
+    #box3 {
+        background-color: rgb(193, 236, 38);
+        max-width: 100%;
+        height: auto;
+    }
+    /*overflow: hidden;*/
+    /*CONTINUING THE COMENT OUT SECTION....(2 of 2)
+ }
+ */
+    
+    .pic1-container {
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .pic2-container {
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .pic3-container {
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #pic1 {
+        height: 200px;
+        width: 350px;
+    }
+    
+    #pic2 {
+        height: 200px;
+        width: 350px;
+    }
+    
+    #pic3 {
+        height: 200px;
+        width: 350px;
+    }
+    /*
+ #pic1:hover {
+     transition: transform 1.5s ease;
+     transform: scale(1.5);
+ }
+ 
+ #pic2:hover {
+     transition: transform 1.5s ease;
+     transform: scale(1.5);
+ }
+ 
+ #pic3:hover {
+     transition: transform 1.5s ease;
+     transform: scale(1.5);
+ }
+ /* .box-text {
+    width: 100%;
+    text-align: justify;
+}
 
-/*
-https://w3bits.com/css-image-hover-zoom/
-Code for the second image to zoom in-out
+
+
+
+/* Move all the media queries down here */
+    /*
+@media
+/*screen and*/
+    /*
+(max-width: 600px) {
+    .three-flex-boxes {
+        flex: 66.66%;
+    }
+}
+
 */
-
-/* [1] The container */
-
-#pic1:hover {
-	height: 70%;
-	width: 70%;
-	/* [1.1] Set it as per your need */
-	overflow: hidden;
-	/* [1.2] Hide the overflowing of child elements */
-}
-
-/* [2] Transition property for smooth transformation of images */
-
-#pic1:hover {
-	transition: transform 1.5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-
-#pic1:hover:hover {
-	transform: scale(1.5);
-}
-
-/* [1] The container */
-
-#pic2:hover {
-	height: 70%;
-	width: 70%;
-	/* [1.1] Set it as per your need */
-	overflow: hidden;
-	/* [1.2] Hide the overflowing of child elements */
-}
-
-/* [2] Transition property for smooth transformation of images */
-
-#pic2:hover {
-	transition: transform 1.5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-
-#pic2:hover {
-	transform: scale(1.5);
-}
-
-/* [1] The container */
-
-#pic3:hover {
-	height: 70%;
-	width: 70%;
-	/* [1.1] Set it as per your need */
-	overflow: hidden;
-	/* [1.2] Hide the overflowing of child elements */
-}
-
-/* [2] Transition property for smooth transformation of images */
-
-#pic3:hover {
-	transition: transform 1.5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-
-#pic3:hover {
-	transform: scale(1.5);
-}
-
-/*
-Hoverable button & color change
-https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_hover
-*/
+    /*@media screen and (max-width: 300px) {
+     .three-flex-boxes {
+         flex-direction: column;
+     }
+ }
+ 
+ END OF COMMENT OUT SECTION..... ********************************** */
+    
+    .wrapper {
+        padding: 30px 30px 300px;
+    }
+    
+    .columns {
+        display: flex;
+    }
+    
+    .col {
+        col
+    }
