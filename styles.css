@@ -45,6 +45,7 @@
     }
     
     .fixed-footer {
+        box-sizing: border-box;
         position: bottom;
         bottom: 0;
         display: inline-block;
@@ -126,83 +127,90 @@
     }
     /*
  Using flex boxes https: //www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_flex
- * ************************************************************* Uncomment to try work out what is causing the uneven boxes .three-pic-box-surround {
-     display: flex;
-     flex-wrap: wrap;
-     max-width: 100%;
-     margin: 5% 10% 0% 10%;
-     justify-content: center;
- }
- 
- .three-flex-boxes {
-     text-align: center;
-     flex: 0.33%;
-     border: 1px solid black;
-     padding: 10px;
-     padding-left: 5px;
-     padding-right: 5px;
- }
- 
- #box1 {
-     background-color: red;
-     max-width: 100%;
-     height: auto;
-     /*overflow: hidden;*/
-    /*CONTINUING THE COMMENT OUT SECTION...
- }
- 
- #box2 {
-     background-color: rgb(0, 102, 255);
-     max-width: 100%;
-     height: auto;
-     /*overflow: hidden;
+ * ************************************************************* Uncomment to try work out what is causing the uneven boxes 
+ */
+    
+    .three-pic-box-surround {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 5% 10% 0% 10%;
+        justify-content: center;
+    }
+    
+    .three-flex-boxes {
+        text-align: center;
+        flex: 0.33%;
+        border: 1px solid black;
+        padding: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    #box1 {
+        background-color: red;
+        max-width: 100%;
+        height: auto;
+        /*overflow: hidden;*/
+        /*CONTINUING THE COMMENT OUT SECTION...*/
+    }
+    
+    #box2 {
+        background-color: rgb(0, 102, 255);
+        max-width: 100%;
+        height: auto;
+    }
+    /*overflow: hidden;
     
  ^^^THIS NEEDS TO BE WORKED OUT
     
   CONTINUING THE COMENT OUT SECTION....(1 of 2)
 }
-
-#box3 {
-    background-color: rgb(193, 236, 38);
-    max-width: 100%;
-    height: auto;
+*/
+    
+    #box3 {
+        background-color: rgb(193, 236, 38);
+        max-width: 100%;
+        height: auto;
+    }
     /*overflow: hidden;*/
     /*CONTINUING THE COMENT OUT SECTION....(2 of 2)
  }
- 
- .pic1-container {
-     width: 300px;
-     margin: 0 auto;
-     overflow: hidden;
- }
- 
- .pic2-container {
-     width: 300px;
-     margin: 0 auto;
-     overflow: hidden;
- }
- 
- .pic3-container {
-     width: 300px;
-     margin: 0 auto;
-     overflow: hidden;
- }
- 
- #pic1 {
-     height: 200px;
-     width: 350px;
- }
- 
- #pic2 {
-     height: 200px;
-     width: 350px;
- }
- 
- #pic3 {
-     height: 200px;
-     width: 350px;
- }
- 
+ */
+    
+    .pic1-container {
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .pic2-container {
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .pic3-container {
+        width: 300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    #pic1 {
+        height: 200px;
+        width: 350px;
+    }
+    
+    #pic2 {
+        height: 200px;
+        width: 350px;
+    }
+    
+    #pic3 {
+        height: 200px;
+        width: 350px;
+    }
+    /*
  #pic1:hover {
      transition: transform 1.5s ease;
      transform: scale(1.5);
@@ -245,17 +253,14 @@
  
  END OF COMMENT OUT SECTION..... ********************************** */
     
-    .four-pic-container {
+    .wrapper {
+        padding: 30px 30px 300px;
+    }
+    
+    .columns {
         display: flex;
-        flex-wrap: wrap;
     }
     
-    .picture-box {
-        max-width: 350px;
-        border: black solid 1px;
-    }
-    
-    .pic-class {
-        max-width: 300px;
-        justify-content: center;
+    .col {
+        col
     }
